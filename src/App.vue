@@ -1,11 +1,7 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <default-layout>
     <router-view/>
-  </div>
+  </default-layout>
 </template>
 
 <style>
@@ -30,3 +26,9 @@
   color: #42b983;
 }
 </style>
+<script>
+import DefaultLayout from "@/layouts/default";
+export default {
+  components: { DefaultLayout }
+};
+</script>
