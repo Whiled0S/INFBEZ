@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="mb-5">Заявление о приеме на работу</h1>
+    <h1 class="mb-5">Заявление об увольнении</h1>
 
-    <pdf-renderer document="/docs/job-application.pdf" />
+    <pdf-renderer document="/docs/resignation-application.pdf" />
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 import PdfRenderer from "@/components/sahred/PdfRenderer";
 
 export default {
-  name: "JobApplication",
+  name: "ResignationApplication",
   components: { PdfRenderer }
 };
 </script>
